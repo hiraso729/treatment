@@ -1,5 +1,5 @@
 <?php
-require_once('../include./model.php');
+require_once('../model/model.php');
 $link = get_db_connect();
 // 接続成功した場合
 if ($link) {
