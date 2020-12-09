@@ -27,7 +27,6 @@
     foreach ($errors as $v) {
         echo '<p class="error">' . $v . '</p>';
     }
-    print_r($hospitals);
     ?>
     <form method="POST" action="../controller/treatment_record.php">
         <select name="hospital_id">
