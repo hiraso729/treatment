@@ -27,12 +27,15 @@
     foreach ($errors as $v) {
         echo '<p class="error">' . $v . '</p>';
     }
+    print_r($hospitals);
     ?>
     <form method="POST" action="../controller/treatment_record.php">
         <select name="hospital_id">
             <?php
             foreach($hospitals as $h){
-                echo '<option value="'.$h['hospital_id'].'" ' . ($h['hospital_id']===$hospital_id)? "selected":"" .'>'.$h['name'].':'.$h['section'].'</option>';
+                echo '<option value="'.$h['hospital_id'].'" ';
+                // echo ($h['hospital_id']===$hospital_id)? "selected":"";
+                echo '>'.$h['name'].':'.$h['section'].'</option>';
             }
             ?>
         </select>
