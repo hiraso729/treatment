@@ -20,9 +20,17 @@
         }
 
         .record_box {
-            margin: 10px;
-            padding: 10px;
-            border: solid 2px #cce4ff;
+            padding: 8px 19px;
+            margin: 2em 0;
+            color: #2c2c2f;
+            background: #cde4ff;
+            border-top: solid 5px #5989cf;
+            border-bottom: solid 5px #5989cf;
+        }
+
+        .record_box p {
+            margin: 0;
+            padding: 0;
         }
 
         h1 {
@@ -66,7 +74,7 @@
                     ?>
                 </select>
 
-                <input type="submit" class="btn btn-primary" value="選択">
+                <input type="submit" class="btn btn-outline-primary btn-sm" value="選択">
             </form>
         </p>
 
@@ -82,7 +90,7 @@
                             <input type="hidden" name="<?php echo $k; ?>" value="<?php echo $v ?>">
                         <?php } ?>
 
-                        <input type="submit" class="btn btn-outline-primary" value="詳細表示">
+                        <input type="submit" class="btn btn-primary btn-sm"  value="詳細表示">
                     </form>
                 </p>
             </div>
