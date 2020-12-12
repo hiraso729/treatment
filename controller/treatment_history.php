@@ -7,7 +7,7 @@ $datas=[];
 $hospital_id='';
 $hospitals=hospitals_select();//病院情報をDBから読み込む
 
-//POSTのときだけ動く
+//POSTのときだけ動く プルダウンを押したとき
 if($_SERVER['REQUEST_METHOD']==='POST'){
     $sections=explode(';',$_POST['section']);
     $hospital_id=$sections[0];
