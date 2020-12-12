@@ -67,6 +67,7 @@
         <input type="hidden" name="sql_kind" value="delete">
 
         <input type="hidden" name="id" value="<?php echo $data['id'] ?>">
+        <input type="hidden" name="section" value="<?php echo $data['hospital_id'].';'. $data['section'] ?>">
 
         <input type="submit" value="削除">
     </form>

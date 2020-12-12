@@ -1,4 +1,5 @@
 <?php
+include_once './session_check.php';
 //全部動く
 include_once '../model/model.php';
 $errors=[];

@@ -23,6 +23,10 @@
             <input type="submit" value="病院登録">
         </form>
     </p>
+    <p></p>
+    <p><a href="./logout.php">
+        ログアウト
+    </a></p>
 </body>
 
 </html>
