@@ -87,7 +87,7 @@
             <label for="symptom">症状</label>
             <input type="text" name="symptom" id="symptom">
         </p>
-        <p><input type="submit" class="btn btn-outline-success value="登録"></p>
+        <p><input type="submit" class="btn btn-outline-success" value="登録"></p>
     </form>
 <p><a href="../controller/top.php">トップに戻る</a></p>
 </div>
