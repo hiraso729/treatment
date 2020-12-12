@@ -22,17 +22,34 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {
+            border-bottom: solid 3px #98FB98;
+            position: relative;
+            width: 90%;
+        }
+
+        h1:after {
+            position: absolute;
+            content: " ";
+            display: block;
+            border-bottom: solid 3px #008000;
+            bottom: -3px;
+            width: 20%;
+        }
+    </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <title>Document</title>
+    <title>ログイン画面</title>
 </head>
 <body>
     <div class="ml-3 mt-3">
+        <h1>Login</h1>
     <?php
     echo $error;
     ?>
     <form method="POST">
-        <p>ユーザー名<input type="text" name="user_id"></p>
-        <p>パスワード<input type="password" name="passwd"></p>
+        <p><input type="text" name="user_id" placeholder="Username" required/></p>
+        <p><input type="password" name="passwd" placeholder="Password" required/></p>
         <p>
             <input type="submit" class="btn btn-outline-success" value="ログイン">
         </p>

@@ -18,6 +18,21 @@
         .error {
             color: red;
         }
+
+        h1 {
+            border-bottom: solid 3px #98FB98;
+            position: relative;
+            width: 90%;
+        }
+
+        h1:after {
+            position: absolute;
+            content: " ";
+            display: block;
+            border-bottom: solid 3px #008000;
+            bottom: -3px;
+            width: 20%;
+        }
     </style>
     <title>治療記録システム</title>
 </head>

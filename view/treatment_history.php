@@ -22,7 +22,22 @@
         .record_box {
             margin: 10px;
             padding: 10px;
-            border: solid 2px black;
+            border: solid 2px #cce4ff;
+        }
+
+        h1 {
+            border-bottom: solid 3px #cce4ff;
+            position: relative;
+            width: 90%;
+        }
+
+        h1:after {
+            position: absolute;
+            content: " ";
+            display: block;
+            border-bottom: solid 3px #5472cd;
+            bottom: -3px;
+            width: 20%;
         }
     </style>
     <title>治療記録システム</title>
@@ -67,7 +82,7 @@
                             <input type="hidden" name="<?php echo $k; ?>" value="<?php echo $v ?>">
                         <?php } ?>
 
-                        <input type="submit" class="btn btn-outline-success" value="詳細表示">
+                        <input type="submit" class="btn btn-outline-primary" value="詳細表示">
                     </form>
                 </p>
             </div>
