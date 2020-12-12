@@ -21,11 +21,12 @@
 
         .record_box {
             padding: 8px 19px;
-            margin: 2em 0;
+            margin: 2em 30px;
             color: #2c2c2f;
             background: #cde4ff;
             border-top: solid 5px #5989cf;
             border-bottom: solid 5px #5989cf;
+            width: 80%;
         }
 
         .record_box p {
